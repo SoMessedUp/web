@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Формы</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="reg">
+            <form action="#" method="post" enctype="multipart/form-data">
+                <h2>Registration</h2>
+
+                <div class="section">
+                    <p>Username</p>
+                    <input tabindex="1" name="Username" type="text">
+                </div>
+
+                <div class="section">
+                    <p>Password</p>
+                    <input tabindex="2" name="Userpass" type="password">
+                </div>
+
+                <div class="section">
+                    <p>Gender</p>
+                    <div class="options modify">
+                        <div class="radio">
+                            <input tabindex="3" type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input tabindex="3" type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modify">
+                <input tabindex="4" type="checkbox" id="terms" name="terms" value="agree"><label for="terms">I agree with Terms</label>
+                </div>
+
+                <button tabindex="5">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
