@@ -4,6 +4,7 @@
         <title>Формы</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"> </script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -14,35 +15,32 @@
                 <h2>Registration</h2>
 
                 <div class="section">
-                    <p>Username</p>
-                    <input tabindex="1" name="Username" type="text">
+                    <p id="username-text">Username</p>
+                    <input class="section-input" tabindex="1" id="username" name="Username" type="text">
                 </div>
 
                 <div class="section">
-                    <p>Password</p>
-                    <input tabindex="2" name="Userpass" type="password">
+                    <p id="password-text">Password</p>
+                    <input class="section-input" tabindex="2" id="password" name="Userpass" type="password">
                 </div>
 
-                <div class="section">
-                    <p>Gender</p>
+                <div class="section" id="gender-div">
+                    <p id="gender-text">Gender</p>
                     <div class="options modify">
                         <div class="radio">
-                            <input tabindex="3" type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                            <input tabindex="3" type="radio" id="male" name="gender" value="male"><label class="modify-label" id="label-male" for="male">Male</label>
                         </div>
                         <div class="radio">
-                            <input tabindex="3" type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                            <input tabindex="3" type="radio" id="female" name="gender" value="female"><label class="modify-label" for="female">Female</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="modify">
-                <input tabindex="4" type="checkbox" id="terms" name="terms" value="agree"><label for="terms">I agree with Terms</label>
+                <div class="modify" id="terms-div">
+                <input tabindex="4" type="checkbox" id="terms" name="terms" value="agree"><label class="modify-label" for="terms">I agree with Terms</label>
                 </div>
 
-                <button tabindex="5">Submit</button>
-                <!-- test -->
-
-                <!-- one more test -->
+                <button type = "button" onclick="check()" tabindex="5">Submit</button>
 
             </form>
         </div>

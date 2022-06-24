@@ -32,12 +32,24 @@ h2 {
     font-size: 20px;
 }
 
-.section input {
+.wrong {
+    color: red;
+}
+
+.wrong-input {
     margin-top: 15px;
     height: 43px;
     width: 348px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid red;
+}
+
+.section-input {
+    margin-top: 15px;
+    height: 43px;
+    width: 348px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 .options {
@@ -49,12 +61,16 @@ h2 {
     padding: 15px 0 0 0;
 }
 
-.modify label{
+.modify-label{
     position: absolute;
     font-size: 16px;
     padding-left: 10px;
     padding-top: 2px;
     vertical-align: auto;
+}
+
+.wrong {
+    color: red;
 }
 
 .modify input{
@@ -78,8 +94,10 @@ button {
     font-size: 20px;
     font-weight: 500;
     margin: 0 auto 0 auto;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #E1E1E1;
 }
+
