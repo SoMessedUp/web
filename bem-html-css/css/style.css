@@ -27,7 +27,8 @@ html, body {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth; }
 
 input, button, textarea {
   font-family: inherit; }
@@ -63,6 +64,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Lato', sans-serif;
+    display: block;
 }
 
 .button {
@@ -75,6 +77,10 @@ body{
   margin: 0px auto;
 }
 
+.button a {
+  color: inherit;
+}
+
 .button:hover{
   cursor: pointer;
 }
@@ -84,6 +90,7 @@ body{
   width: 80px;
   background-color: #000;
   height: 1px;
+  border-radius: 1px;
 }
 
 .title {
@@ -103,8 +110,8 @@ letter-spacing: 8px;
   width: 75px;
   text-transform: uppercase;
   font-size: 15px;
+  text-decoration: none;
   color: #3c3c3c;
-
 }
 
 .form {
@@ -167,19 +174,42 @@ letter-spacing: 8px;
 
 }
 
-.main__line{
+.main__line {
   margin: 45px auto 225px auto;
   width: 105px;
   background-color: #fff;
 }
 
-.main__button{
+.main__button {
   color:#fff;
 }
 
-#main__arrow{
+#main__arrow {
   display: block;
   margin: 75px auto;
+}
+
+.navigation_block {
+  padding: 20px 0 25px;
+  border-bottom: 1px solid #f2f2f2;
+  position: sticky;
+  top: 0;
+  transition: all 0.1s;
+  background-color: #fff;
+  opacity: 0.95;
+}
+
+.navigation_block li{
+  width: 100px;
+}
+
+.navigation_block a {
+  color: #000;
+  transition: all .2s;
+}
+
+.navigation_block a:hover {
+  color: #ada074;
 }
 
 .about__body {
