@@ -75,6 +75,7 @@ body{
   padding: 15px 40px;
   border: #fff solid 1px;
   margin: 0px auto;
+  transition: all .2s;
 }
 
 .button a {
@@ -184,6 +185,18 @@ letter-spacing: 8px;
   color:#fff;
 }
 
+.main__button:hover {
+  box-shadow: 
+    inset -86.5px 0 0 0 #fff,
+    inset 86.5px 0 0 0 #fff; 
+  color: #000;
+}
+
+.main__button:active {
+  color: gray;
+  transition: 0s;
+}
+
 #main__arrow {
   display: block;
   margin: 75px auto;
@@ -210,6 +223,11 @@ letter-spacing: 8px;
 
 .navigation_block a:hover {
   color: #ada074;
+}
+
+.navigation_block a:active {
+  color: #72653a;
+  transition: 0s;
 }
 
 .about__body {
@@ -285,9 +303,20 @@ letter-spacing: 8px;
 
 }
 
-.portfolio__button{
+.portfolio__button {
   color:#000;
   border: #000 solid 1px;
+}
+
+.portfolio__button:hover {
+  box-shadow: inset 0 -3.25em 0 0 #000;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.portfolio__button:active {
+  color: gray;
+  transition: 0s;
 }
 
 .partners {
@@ -320,7 +349,7 @@ letter-spacing: 8px;
 }
 
 .contact {
-  padding: 180px 0 100px;
+  padding: 140px 0 100px;
 }
 .contact__wrapper {
   max-width: 900px;
@@ -359,6 +388,16 @@ letter-spacing: 8px;
   text-transform: uppercase;
   width: 50px;
   background-color: #fff;
+  transition: all .2s;
+}
+
+.contact__button:hover {
+  color: #ada074;
+}
+
+.contact__button:active {
+  color: #72653a;
+  transition: 0s;
 }
 
 .contact__info {
@@ -411,6 +450,20 @@ footer {
   margin: 40px auto 30px;
   justify-content: space-between;
 
+}
+
+.footer__links a {
+  color: #a4a4a4;
+  transition: all .2s;
+}
+
+.footer__links a:hover {
+  color: #fff;
+}
+
+.footer__links a:active {
+  color: #6b6b6b;
+  transition: 0s;
 }
 
 .footer__copy {
