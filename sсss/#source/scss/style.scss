@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import "nullstyle.scss";
+@import "_nullstyle";
 
 .main {
     background-image: url(../img/header/bg.png);
     background-position: 50% 83px;
+    background-repeat: repeat-x;
     height: 1100px;
-    background-repeat: no-repeat;
     background-color: #0e1a35;
 }
 
@@ -23,6 +23,7 @@ button {
 }
 
 .page {
+    padding-bottom: 200px;
 
 }
 
@@ -51,7 +52,7 @@ nav {
         font-style: normal;
         letter-spacing: 0.36px;
         color: #fff;
-        margin: 0 25px;
+        margin: 0 23px;
 	}
     &__button {
         padding: 15px 40px;
@@ -113,3 +114,74 @@ nav {
     }
 }
 
+.features {
+    display: flex;
+    margin: 257px auto 0;
+    max-width: 1340px;
+    justify-content: space-between;
+    &__item {
+        width: 360px;
+    }
+}
+.features-item {
+    &__image {
+        display: flex;
+        width: 92px;
+        height: 88px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    &__line {
+        position: absolute;
+        margin: -43px 0 0 315px;
+        width: 220px;
+        height: 1px;
+        background-color: #8492af;
+        border-radius: 1px;
+    }
+
+    &__title {
+        margin: 52px 0 0;
+        object-fit: contain;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: 0.48px;
+        text-align: center;
+        color: #0e1a35;
+    }
+
+    &__text {
+        width: 360px;
+        height: 78px;
+        margin: 20px 0 58px;
+        object-fit: fill;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #8492af;
+    }
+
+    &__button {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0e1a35;
+        width: 250px;
+        height: 48px;
+        border: #8492af solid 1px;
+        background: none;
+        margin: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
