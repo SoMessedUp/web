@@ -148,6 +148,8 @@ letter-spacing: 8px;
 
 .main {
   background: url(../img/main/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 1080px;
 }
@@ -187,8 +189,8 @@ letter-spacing: 8px;
 
 .main__button:hover {
   box-shadow: 
-    inset -86.5px 0 0 0 #fff,
-    inset 86.5px 0 0 0 #fff; 
+    inset -87.36px 0 0 0 #fff,
+    inset 87.36px 0 0 0 #fff; 
   color: #000;
 }
 
@@ -284,6 +286,10 @@ letter-spacing: 8px;
   line-height: 26px;
 }
 
+.about__column:last-child .item-about__icon img{
+  padding-left: 12px;
+}
+
 .portfolio {
   background-color: #f3f3f3;
   padding: 105px 0 60px 0;
@@ -322,6 +328,8 @@ letter-spacing: 8px;
 .partners {
   padding: 100px 0 100px;
   background-image: url(../img/partners/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .partners__wrapper{
